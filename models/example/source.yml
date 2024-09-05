@@ -4,4 +4,6 @@ sources:
   - name: snowflake_tst
     tables:
       - name: tst_table1
-        description: test table
+        description: test_table1
+      - name: tst_table2
+        description: test_table2
