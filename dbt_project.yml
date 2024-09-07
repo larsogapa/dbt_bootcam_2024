@@ -44,5 +44,7 @@ models:
       +materialized: table
     snapshots_load:
       +materialized: table
+    first_models:
+      +materialized: table
 
       
