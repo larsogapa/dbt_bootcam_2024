@@ -10,6 +10,7 @@ sources:
 
   - name: stripe
     database: jaffle_raw  
+    schema: stripe
     tables:
       - name: payment 
 

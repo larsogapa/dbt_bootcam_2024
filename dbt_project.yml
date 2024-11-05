@@ -41,10 +41,6 @@ on-run-end: "select current_date;"
 
 models:
   my_new_project:
-    pre-hook:
-      - "select current_data;"
-    post-hook:
-      - "select current_date;"
     first_models:
       +materialized: table
 
