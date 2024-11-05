@@ -1,2 +1,3 @@
-select * from {{ source('jaffle_shop', 'customers') }}
-limit 10
+
+select * 
+from {{ source('jaffle_shop', 'customers') }}

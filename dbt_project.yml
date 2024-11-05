@@ -45,8 +45,6 @@ models:
       - "select current_data;"
     post-hook:
       - "select current_date;"
-    incremental_load:
-      +materialized: table
     first_models:
       +materialized: table
 
