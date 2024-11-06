@@ -1,6 +1,6 @@
 
 select 
-    ID, 
+    {{upper_mc('ID')}}, 
     FIRST_NAME, 
     LAST_NAME
 from {{ source('jaffle_shop', 'customers') }}
