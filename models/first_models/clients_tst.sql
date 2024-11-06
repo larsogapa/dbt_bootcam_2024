@@ -1,7 +1,7 @@
 
 select 
-    {{upper_mc('ID')}} as id, 
-    FIRST_NAME, 
+    ID 
+    {{upper_mc('FIRST_NAME')}} as FIRST_NAME, 
     LAST_NAME
 from {{ source('jaffle_shop', 'customers') }}
 
