@@ -12,9 +12,6 @@
     )
 }}    
 {% endif %}
-{{log(var('hist_load'))}}
-
-
 
 select 
     {{dbt_utils.generate_surrogate_key(['ID','FIRST_NAME','LAST_NAME'])}} as skey,
