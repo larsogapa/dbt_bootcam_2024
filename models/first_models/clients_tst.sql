@@ -1,21 +1,18 @@
-
-
-{% if var('snfwarehouse')=='true' %}
+{% if var('hist_load')=='true' %}
 {{
     config(
         materialized='table',
         snowflake_warehouse=var('snfwarehouse')
     )
 }}
-
 {%else%}
 {{
     config(
         materialized='table'
     )
-}}
-    
+}}    
 {% endif %}
+{{log(var('hist_load'))}}
 
 
 
